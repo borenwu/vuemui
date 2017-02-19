@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <div class="col-sm-9 col-sm-offset-4 col-md-10 col-md-offset-3 main">
     <router-view></router-view>
   </div>
 </template>
@@ -8,6 +8,7 @@
   .main {
     padding: 20px;
   }
+
   @media (min-width: 768px) {
     .main {
       padding-right: 40px;
@@ -18,14 +19,12 @@
 
 <script>
 
-    export default{
-        data(){
-            return{
-                msg:'hello main apge'
-            }
-        },
-        components:{
-
-        }
-    }
+  export default{
+    data(){
+      return {
+        msg: 'hello main apge'
+      }
+    },
+    components: {}
+  }
 </script>

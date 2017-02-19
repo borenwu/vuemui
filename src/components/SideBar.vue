@@ -1,5 +1,5 @@
 <template>
-  <aside id="left-sidebar-nav">
+  <aside class="col-sm-3 col-md-2" id="left-sidebar-nav">
     <ul id="slide-out" class="side-nav fixed leftside-navigation">
       <li class="user-details cyan darken-2">
         <div class="row">
@@ -26,8 +26,10 @@
           </div>
         </div>
       </li>
-      <li class="bold"><a href="index.html" class="waves-effect waves-cyan">
-        <i class="material-icons">dashboard</i>主页</a>
+      <li class="bold">
+        <router-link class="collapsible-header waves-effect waves-cyan" to="/">
+          <i class="material-icons">dashboard</i> 主页
+        </router-link>
       </li>
 
       <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan">
@@ -36,11 +38,19 @@
 
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
-          <li class="bold"><a class="collapsible-header waves-effect waves-cyan">
-            <i class="material-icons">assignment</i> 订单</a>
+          <li class="bold">
+            <router-link class="collapsible-header waves-effect waves-cyan" to="/order">
+              <i class="material-icons">assignment</i> 订单
+            </router-link>
+            <!--<a class="collapsible-header waves-effect waves-cyan">-->
+              <!--<i class="material-icons">assignment</i> 订单-->
+            <!--</a>-->
           </li>
 
-          <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="material-icons">schedule</i>生产</a>
+          <li class="bold">
+            <router-link class="collapsible-header waves-effect waves-cyan" to="/work">
+              <i class="material-icons">schedule</i> 生产
+            </router-link>
             <div class="collapsible-body">
               <ul>
                 <li><a href="ui-buttons.html">Buttons</a>
@@ -71,8 +81,10 @@
             </div>
           </li>
 
-          <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="material-icons">store</i>
-            仓库</a>
+          <li class="bold">
+            <router-link class="collapsible-header waves-effect waves-cyan" to="/warehouse">
+              <i class="material-icons">store</i> 仓库
+            </router-link>
             <div class="collapsible-body">
               <ul>
                 <li><a href="table-basic.html">Basic Tables</a>
@@ -83,8 +95,10 @@
             </div>
           </li>
 
-          <li class="bold"><a class="collapsible-header  waves-effect waves-cyan">
-            <i class="material-icons">equalizer</i> 财务</a>
+          <li class="bold">
+            <router-link class="collapsible-header waves-effect waves-cyan" to="/finance">
+              <i class="material-icons">equalizer</i> 财务
+            </router-link>
             <div class="collapsible-body">
               <ul>
                 <li><a href="form-elements.html">Form Elements</a>
@@ -100,7 +114,7 @@
       <li class="li-hover">
         <div class="divider"></div>
       </li>
-      <li class="li-hover"><p class="ultra-small margin more-text">更多</p></li>
+      <li class="li-hover"><p class="margin more-text">更多</p></li>
       <li><a href="css-grid.html"><i class="material-icons">av_timer</i> 天气</a>
       </li>
       <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> 帮助</a>
